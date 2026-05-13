@@ -1,0 +1,10 @@
+fastapi==0.124.1
+uvicorn[standard]==0.38.0
+pydantic==2.12.5
+pydantic-settings==2.12.0
+python-dotenv==1.2.1
+httpx==0.28.1
+beautifulsoup4==4.12.3
+openai==2.9.0
+python-pptx==1.0.2
+pytest==9.0.2

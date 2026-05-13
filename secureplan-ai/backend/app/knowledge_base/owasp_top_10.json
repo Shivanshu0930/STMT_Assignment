@@ -1,0 +1,13 @@
+[
+  {"id": "A01", "name": "Broken Access Control", "scenario_seed": "Verify users cannot access restricted pages, objects, or actions by changing URLs or identifiers."},
+  {"id": "A02", "name": "Cryptographic Failures", "scenario_seed": "Verify sensitive data is protected in transit and not exposed in UI, storage, or responses."},
+  {"id": "A03", "name": "Injection", "scenario_seed": "Verify inputs reject SQL, command, HTML, and script payloads without unsafe execution or verbose errors."},
+  {"id": "A04", "name": "Insecure Design", "scenario_seed": "Verify business workflows prevent abuse, bypasses, and unsafe state transitions."},
+  {"id": "A05", "name": "Security Misconfiguration", "scenario_seed": "Verify security headers, error handling, HTTP methods, and defaults are configured securely."},
+  {"id": "A06", "name": "Vulnerable and Outdated Components", "scenario_seed": "Verify exposed client-side libraries and components are inventoried and checked for known vulnerabilities."},
+  {"id": "A07", "name": "Identification and Authentication Failures", "scenario_seed": "Verify login, registration, password reset, lockout, and session flows resist abuse."},
+  {"id": "A08", "name": "Software and Data Integrity Failures", "scenario_seed": "Verify update, upload, import, and third-party script flows maintain integrity controls."},
+  {"id": "A09", "name": "Security Logging and Monitoring Failures", "scenario_seed": "Verify security-relevant events are logged and alertable without leaking sensitive data."},
+  {"id": "A10", "name": "Server-Side Request Forgery", "scenario_seed": "Verify URL-fetching or webhook features cannot reach internal or unauthorized resources."}
+]
+

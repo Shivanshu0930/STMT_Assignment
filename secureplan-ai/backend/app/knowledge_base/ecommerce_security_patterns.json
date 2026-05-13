@@ -1,0 +1,10 @@
+[
+  {"flow": "Authentication", "signals": ["login", "sign in", "password"], "risks": ["A07", "A01"]},
+  {"flow": "Registration", "signals": ["register", "sign up", "create account"], "risks": ["A07", "A04"]},
+  {"flow": "Search", "signals": ["search", "query"], "risks": ["A03"]},
+  {"flow": "Cart", "signals": ["cart", "basket", "checkout"], "risks": ["A04", "A01"]},
+  {"flow": "Payment", "signals": ["payment", "card", "billing"], "risks": ["A02", "A04"]},
+  {"flow": "Profile", "signals": ["profile", "account", "address"], "risks": ["A01", "A02"]},
+  {"flow": "Upload", "signals": ["upload", "file"], "risks": ["A08", "A03"]}
+]
+

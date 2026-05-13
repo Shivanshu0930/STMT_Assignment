@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-ollama-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Segoe UI Variable", "Segoe UI", Arial, sans-serif;
+  --font-ollama-display: ui-rounded, "SF Pro Rounded", "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI Variable", "Segoe UI", Arial, sans-serif;
+  --font-ollama-mono: "SFMono-Regular", "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  color: #263442;
+  background: #f8fbf6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-ollama-sans);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 253, 0.94), rgba(248, 251, 246, 0.98)),
+    #f8fbf6;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-ollama-display);
+}
+
+code,
+pre,
+kbd,
+samp,
+.font-mono {
+  font-family: var(--font-ollama-mono);
+}
+
+::selection {
+  background: #bff8ee;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #c8d0dd;
+  border-radius: 999px;
+}
+
+.workspace-grid {
+  background-image:
+    linear-gradient(rgba(38, 52, 66, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(38, 52, 66, 0.045) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.premium-panel {
+  border: 1px solid rgba(124, 148, 154, 0.22);
+  background: linear-gradient(180deg, rgba(255, 255, 253, 0.97), rgba(247, 252, 246, 0.94));
+  box-shadow:
+    0 1px 1px rgba(38, 52, 66, 0.03),
+    0 18px 46px rgba(56, 83, 88, 0.09);
+}
+
+.fresh-panel {
+  border: 1px solid rgba(124, 148, 154, 0.22);
+  background:
+    linear-gradient(135deg, rgba(232, 255, 245, 0.92), rgba(255, 249, 235, 0.92) 45%, rgba(241, 237, 255, 0.9));
+  box-shadow:
+    0 1px 1px rgba(38, 52, 66, 0.04),
+    0 28px 80px rgba(54, 86, 96, 0.12);
+}
+
+.soft-highlight {
+  background: linear-gradient(90deg, rgba(23, 184, 144, 0.22), rgba(255, 122, 89, 0));
+}
+
+@keyframes premium-pulse {
+  0%, 100% {
+    opacity: 0.72;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes subtle-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-premium-pulse {
+  animation: premium-pulse 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-subtle-rise {
+  animation: subtle-rise 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}

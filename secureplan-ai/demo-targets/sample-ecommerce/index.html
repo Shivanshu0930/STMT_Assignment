@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Northstar Commerce</title>
+    <style>
+      body { margin: 0; font-family: Inter, Segoe UI, Arial, sans-serif; background: #f7f8fb; color: #101828; }
+      header { display: flex; justify-content: space-between; align-items: center; padding: 22px 42px; background: white; border-bottom: 1px solid #dde3ed; }
+      nav a { margin-left: 20px; color: #344054; text-decoration: none; font-weight: 600; }
+      main { max-width: 1120px; margin: 0 auto; padding: 44px 24px; }
+      .hero { display: grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items: center; }
+      .panel { background: white; border: 1px solid #dde3ed; border-radius: 8px; padding: 24px; box-shadow: 0 18px 45px rgba(16,24,40,.07); }
+      h1 { font-size: 46px; line-height: 1.04; margin: 0 0 16px; }
+      input, button { height: 42px; border-radius: 6px; border: 1px solid #cfd7e5; padding: 0 12px; font: inherit; }
+      button { background: #101828; color: white; font-weight: 700; cursor: pointer; }
+      .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 28px; }
+      .product { background: white; border: 1px solid #dde3ed; border-radius: 8px; padding: 18px; }
+      .price { color: #008f7e; font-weight: 800; }
+      @media (max-width: 800px) { .hero, .grid { grid-template-columns: 1fr; } header { padding: 18px 20px; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <strong>Northstar Commerce</strong>
+      <nav>
+        <a href="/login">Login</a>
+        <a href="/account">Account</a>
+        <a href="/cart">Cart</a>
+        <a href="/checkout">Checkout</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Premium gear for modern teams</h1>
+          <p>Search products, manage your account, apply coupons, and checkout securely.</p>
+          <form action="/search" method="GET">
+            <input name="query" placeholder="Search catalog" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        <form class="panel" action="/login" method="POST">
+          <h2>Member Login</h2>
+          <input name="email" type="email" placeholder="Email" required />
+          <br /><br />
+          <input name="password" type="password" placeholder="Password" required />
+          <br /><br />
+          <button type="submit">Sign in</button>
+        </form>
+      </section>
+      <section class="grid">
+        <article class="product"><h3>Secure Backpack</h3><p class="price">$129</p><button>Add to cart</button></article>
+        <article class="product"><h3>Travel Wallet</h3><p class="price">$49</p><button>Add to cart</button></article>
+        <article class="product"><h3>Work Jacket</h3><p class="price">$189</p><button>Add to cart</button></article>
+      </section>
+    </main>
+  </body>
+</html>
+
